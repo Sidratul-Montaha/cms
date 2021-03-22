@@ -1,512 +1,262 @@
 
-<!--
-=========================================================
-Material Dashboard - v2.1.2
-=========================================================
-
-Product Page: https://www.creative-tim.com/product/material-dashboard
-Copyright 2020 Creative Tim (https://www.creative-tim.com)
-Coded by Creative Tim
-
-=========================================================
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>
-        Material Dashboard by Creative Tim
-    </title>
-    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <!-- Extra details for Live View on GitHub Pages -->
-    <!-- Canonical SEO -->
-    <link rel="canonical" href="https://www.creative-tim.com/product/material-dashboard" />
-    <!--  Social tags      -->
-    <meta name="keywords" content="creative tim, html dashboard, html css dashboard, web dashboard, bootstrap 4 dashboard, bootstrap 4, css3 dashboard, bootstrap 4 admin, material dashboard bootstrap 4 dashboard, frontend, responsive bootstrap 4 dashboard, free dashboard, free admin dashboard, free bootstrap 4 admin dashboard">
-    <meta name="description" content="Material Dashboard is a Free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design.">
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Material Dashboard by Creative Tim">
-    <meta itemprop="description" content="Material Dashboard is a Free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design.">
-    <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/50/opt_md_thumbnail.jpg">
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="product">
-    <meta name="twitter:site" content="@creativetim">
-    <meta name="twitter:title" content="Material Dashboard by Creative Tim">
-    <meta name="twitter:description" content="Material Dashboard is a Free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design.">
-    <meta name="twitter:creator" content="@creativetim">
-    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/50/opt_md_thumbnail.jpg">
-    <!-- Open Graph data -->
-    <meta property="fb:app_id" content="655968634437471">
-    <meta property="og:title" content="Material Dashboard by Creative Tim" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://demos.creative-tim.com/material-dashboard/examples/dashboard.html" />
-    <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/50/opt_md_thumbnail.jpg" />
-    <meta property="og:description" content="Material Dashboard is a Free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design." />
-    <meta property="og:site_name" content="Creative Tim" />
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <!-- CSS Files -->
-    <link href="https://demos.creative-tim.com/material-dashboard/assets/css/material-dashboard.min.css?v=2.1.2" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="https://demos.creative-tim.com/material-dashboard/assets/demo/demo.css" rel="stylesheet" />
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
-    </script>
-    <!-- End Google Tag Manager -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Courier Management System</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="{{asset("backend")}}/vendors/iconfonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="{{asset("backend")}}/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="{{asset("backend")}}/vendors/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="{{asset("backend")}}/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="http://www.urbanui.com/" />
 </head>
+<body>
+<div class="container-scroller">
 
-<body class="">
-<!-- Extra details for Live View on GitHub Pages -->
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-        <!--
-          Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
-          Tip 2: you can also add an image using data-image tag
-      -->
-        <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                Creative Tim
-            </a></div>
-        <div class="sidebar-wrapper">
-            <ul class="nav">
-                <li class="nav-item active  ">
-                    <a class="nav-link" href="./dashboard.html">
-                        <i class="material-icons">dashboard</i>
-                        <p>Dashboard</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./user.html">
-                        <i class="material-icons">person</i>
-                        <p>User Profile</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./tables.html">
-                        <i class="material-icons">content_paste</i>
-                        <p>Table List</p>
-                    </a>
-                </li>
 
-                <li class="nav-item ">
-                    <a class="nav-link" href="./icons.html">
-                        <i class="material-icons">bubble_chart</i>
-                        <p>Icons</p>
-                    </a>
+  @include('backend.partial.header')
+
+
+
+
+
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_settings-panel.html -->
+        <div class="theme-setting-wrapper">
+            <div id="settings-trigger"><i class="fas fa-fill-drip"></i></div>
+            <div id="theme-settings" class="settings-panel">
+                <i class="settings-close fa fa-times"></i>
+                <p class="settings-heading">SIDEBAR SKINS</p>
+                <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+                <div class="sidebar-bg-options selected" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+                <p class="settings-heading mt-2">HEADER SKINS</p>
+                <div class="color-tiles mx-0 px-4">
+                    <div class="tiles primary"></div>
+                    <div class="tiles success"></div>
+                    <div class="tiles warning"></div>
+                    <div class="tiles danger"></div>
+                    <div class="tiles info"></div>
+                    <div class="tiles dark"></div>
+                    <div class="tiles default"></div>
+                </div>
+            </div>
+        </div>
+        <div id="right-sidebar" class="settings-panel">
+            <i class="settings-close fa fa-times"></i>
+            <ul class="nav nav-tabs" id="setting-panel" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./map.html">
-                        <i class="material-icons">location_ons</i>
-                        <p>Maps</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./notifications.html">
-                        <i class="material-icons">notifications</i>
-                        <p>Notifications</p>
-                    </a>
-                </li>
-                
-                <li class="nav-item active-pro ">
-                    <a class="nav-link" href="./upgrade.html">
-                        <i class="material-icons">unarchive</i>
-                        <p>Upgrade to PRO</p>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
                 </li>
             </ul>
+            <div class="tab-content" id="setting-content">
+                <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+                    <div class="add-items d-flex px-3 mb-0">
+                        <form class="form w-100">
+                            <div class="form-group d-flex">
+                                <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                                <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task-todo">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="list-wrapper px-3">
+                        <ul class="d-flex flex-column-reverse todo-list">
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox">
+                                        Team review meeting at 3.00 PM
+                                    </label>
+                                </div>
+                                <i class="remove fa fa-times-circle"></i>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox">
+                                        Prepare for presentation
+                                    </label>
+                                </div>
+                                <i class="remove fa fa-times-circle"></i>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox">
+                                        Resolve all the low priority tickets due today
+                                    </label>
+                                </div>
+                                <i class="remove fa fa-times-circle"></i>
+                            </li>
+                            <li class="completed">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox" checked>
+                                        Schedule meeting for next week
+                                    </label>
+                                </div>
+                                <i class="remove fa fa-times-circle"></i>
+                            </li>
+                            <li class="completed">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox" checked>
+                                        Project review
+                                    </label>
+                                </div>
+                                <i class="remove fa fa-times-circle"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="events py-4 border-bottom px-3">
+                        <div class="wrapper d-flex mb-2">
+                            <i class="fa fa-times-circle text-primary mr-2"></i>
+                            <span>Feb 11 2018</span>
+                        </div>
+                        <p class="mb-0 font-weight-thin text-gray">Creating component page</p>
+                        <p class="text-gray mb-0">build a js based app</p>
+                    </div>
+                    <div class="events pt-4 px-3">
+                        <div class="wrapper d-flex mb-2">
+                            <i class="fa fa-times-circle text-primary mr-2"></i>
+                            <span>Feb 7 2018</span>
+                        </div>
+                        <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+                        <p class="text-gray mb-0 ">Call Sarah Graves</p>
+                    </div>
+                </div>
+                <!-- To do section tab ends -->
+                <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+                    <div class="d-flex align-items-center justify-content-between border-bottom">
+                        <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+                        <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
+                    </div>
+                    <ul class="chat-list">
+                        <li class="list active">
+                            <div class="profile"><img src="image/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                            <div class="info">
+                                <p>Thomas Douglas</p>
+                                <p>Available</p>
+                            </div>
+                            <small class="text-muted my-auto">19 min</small>
+                        </li>
+                        <li class="list">
+                            <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                            <div class="info">
+                                <div class="wrapper d-flex">
+                                    <p>Catherine</p>
+                                </div>
+                                <p>Away</p>
+                            </div>
+                            <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                            <small class="text-muted my-auto">23 min</small>
+                        </li>
+                        <li class="list">
+                            <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                            <div class="info">
+                                <p>Daniel Russell</p>
+                                <p>Available</p>
+                            </div>
+                            <small class="text-muted my-auto">14 min</small>
+                        </li>
+                        <li class="list">
+                            <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                            <div class="info">
+                                <p>James Richardson</p>
+                                <p>Away</p>
+                            </div>
+                            <small class="text-muted my-auto">2 min</small>
+                        </li>
+                        <li class="list">
+                            <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                            <div class="info">
+                                <p>Madeline Kennedy</p>
+                                <p>Available</p>
+                            </div>
+                            <small class="text-muted my-auto">5 min</small>
+                        </li>
+                        <li class="list">
+                            <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                            <div class="info">
+                                <p>Sarah Graves</p>
+                                <p>Available</p>
+                            </div>
+                            <small class="text-muted my-auto">47 min</small>
+                        </li>
+                    </ul>
+                </div>
+                <!-- chat tab ends -->
+            </div>
         </div>
+
+
+
+
+
+
+       @include('backend.partial.sidebar')
+
+
+
+
+
+
+    <!-- partial -->
+        <div class="main-panel">
+            <div class="content-wrapper">
+
+
+
+
+
+            </div>
+            <!-- content-wrapper ends -->
+
+
+
+
+            @include('backend.partial.footer')
+
+
+
+
+        </div>
+        <!-- main-panel ends -->
     </div>
-
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:;">
-                                <i class="material-icons">dashboard</i>
-                                <p class="d-lg-none d-md-block">
-                                    Stats
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="material-icons">notifications</i>
-                                <span class="notification">5</span>
-                                <p class="d-lg-none d-md-block">
-                                    Some Actions
-                                </p>
-                            </a>
-
-                        </li>
-
-
-
-
-        </ul>
-    </div>
+    <!-- page-body-wrapper ends -->
 </div>
-<!--   Core JS Files   -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/core/jquery.min.js"></script>
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/core/popper.min.js"></script>
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/core/bootstrap-material-design.min.js"></script>
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<!-- Plugin for the momentJs  -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/moment.min.js"></script>
-<!--  Plugin for Sweet Alert -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/sweetalert2.js"></script>
-<!-- Forms Validations Plugin -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/jquery.validate.min.js"></script>
-<!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/jquery.bootstrap-wizard.js"></script>
-<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/bootstrap-selectpicker.js"></script>
-<!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
-<!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/jquery.dataTables.min.js"></script>
-<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/bootstrap-tagsinput.js"></script>
-<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/jasny-bootstrap.min.js"></script>
-<!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/fullcalendar.min.js"></script>
-<!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/jquery-jvectormap.js"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/nouislider.min.js"></script>
-<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
-<!-- Library for adding dinamically elements -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/arrive.min.js"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Chartist JS -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/chartist.min.js"></script>
-<!--  Notifications Plugin    -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/plugins/bootstrap-notify.js"></script>
-<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/js/material-dashboard.min.js?v=2.1.2" type="text/javascript"></script>
-<!-- Material Dashboard DEMO methods, don't include it in your project! -->
-<script src="https://demos.creative-tim.com/material-dashboard/assets/demo/demo.js"></script>
-<script>
-    $(document).ready(function() {
-        $().ready(function() {
-            $sidebar = $('.sidebar');
+<!-- container-scroller -->
 
-            $sidebar_img_container = $sidebar.find('.sidebar-background');
-
-            $full_page = $('.full-page');
-
-            $sidebar_responsive = $('body > .navbar-collapse');
-
-            window_width = $(window).width();
-
-            fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
-
-            if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
-                if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
-                    $('.fixed-plugin .dropdown').addClass('open');
-                }
-
-            }
-
-            $('.fixed-plugin a').click(function(event) {
-                // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
-                if ($(this).hasClass('switch-trigger')) {
-                    if (event.stopPropagation) {
-                        event.stopPropagation();
-                    } else if (window.event) {
-                        window.event.cancelBubble = true;
-                    }
-                }
-            });
-
-            $('.fixed-plugin .active-color span').click(function() {
-                $full_page_background = $('.full-page-background');
-
-                $(this).siblings().removeClass('active');
-                $(this).addClass('active');
-
-                var new_color = $(this).data('color');
-
-                if ($sidebar.length != 0) {
-                    $sidebar.attr('data-color', new_color);
-                }
-
-                if ($full_page.length != 0) {
-                    $full_page.attr('filter-color', new_color);
-                }
-
-                if ($sidebar_responsive.length != 0) {
-                    $sidebar_responsive.attr('data-color', new_color);
-                }
-            });
-
-            $('.fixed-plugin .background-color .badge').click(function() {
-                $(this).siblings().removeClass('active');
-                $(this).addClass('active');
-
-                var new_color = $(this).data('background-color');
-
-                if ($sidebar.length != 0) {
-                    $sidebar.attr('data-background-color', new_color);
-                }
-            });
-
-            $('.fixed-plugin .img-holder').click(function() {
-                $full_page_background = $('.full-page-background');
-
-                $(this).parent('li').siblings().removeClass('active');
-                $(this).parent('li').addClass('active');
-
-
-                var new_image = $(this).find("img").attr('src');
-
-                if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-                    $sidebar_img_container.fadeOut('fast', function() {
-                        $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
-                        $sidebar_img_container.fadeIn('fast');
-                    });
-                }
-
-                if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-                    var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
-
-                    $full_page_background.fadeOut('fast', function() {
-                        $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
-                        $full_page_background.fadeIn('fast');
-                    });
-                }
-
-                if ($('.switch-sidebar-image input:checked').length == 0) {
-                    var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
-                    var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
-
-                    $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
-                    $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
-                }
-
-                if ($sidebar_responsive.length != 0) {
-                    $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
-                }
-            });
-
-            $('.switch-sidebar-image input').change(function() {
-                $full_page_background = $('.full-page-background');
-
-                $input = $(this);
-
-                if ($input.is(':checked')) {
-                    if ($sidebar_img_container.length != 0) {
-                        $sidebar_img_container.fadeIn('fast');
-                        $sidebar.attr('data-image', '#');
-                    }
-
-                    if ($full_page_background.length != 0) {
-                        $full_page_background.fadeIn('fast');
-                        $full_page.attr('data-image', '#');
-                    }
-
-                    background_image = true;
-                } else {
-                    if ($sidebar_img_container.length != 0) {
-                        $sidebar.removeAttr('data-image');
-                        $sidebar_img_container.fadeOut('fast');
-                    }
-
-                    if ($full_page_background.length != 0) {
-                        $full_page.removeAttr('data-image', '#');
-                        $full_page_background.fadeOut('fast');
-                    }
-
-                    background_image = false;
-                }
-            });
-
-            $('.switch-sidebar-mini input').change(function() {
-                $body = $('body');
-
-                $input = $(this);
-
-                if (md.misc.sidebar_mini_active == true) {
-                    $('body').removeClass('sidebar-mini');
-                    md.misc.sidebar_mini_active = false;
-
-                    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
-
-                } else {
-
-                    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
-
-                    setTimeout(function() {
-                        $('body').addClass('sidebar-mini');
-
-                        md.misc.sidebar_mini_active = true;
-                    }, 300);
-                }
-
-                // we simulate the window Resize so the charts will get updated in realtime.
-                var simulateWindowResize = setInterval(function() {
-                    window.dispatchEvent(new Event('resize'));
-                }, 180);
-
-                // we stop the simulation of Window Resize after the animations are completed
-                setTimeout(function() {
-                    clearInterval(simulateWindowResize);
-                }, 1000);
-
-            });
-        });
-    });
-</script>
-<!-- Sharrre libray -->
-<script src="../assets/demo/jquery.sharrre.js"></script>
-<script>
-    $(document).ready(function() {
-
-        $('#facebook').sharrre({
-            share: {
-                facebook: true
-            },
-            enableHover: false,
-            enableTracking: false,
-            enableCounter: false,
-            click: function(api, options) {
-                api.simulateClick();
-                api.openPopup('facebook');
-            },
-            template: '<i class="fab fa-facebook-f"></i> Facebook',
-            url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
-        });
-
-        $('#google').sharrre({
-            share: {
-                googlePlus: true
-            },
-            enableCounter: false,
-            enableHover: false,
-            enableTracking: true,
-            click: function(api, options) {
-                api.simulateClick();
-                api.openPopup('googlePlus');
-            },
-            template: '<i class="fab fa-google-plus"></i> Google',
-            url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
-        });
-
-        $('#twitter').sharrre({
-            share: {
-                twitter: true
-            },
-            enableHover: false,
-            enableTracking: false,
-            enableCounter: false,
-            buttons: {
-                twitter: {
-                    via: 'CreativeTim'
-                }
-            },
-            click: function(api, options) {
-                api.simulateClick();
-                api.openPopup('twitter');
-            },
-            template: '<i class="fab fa-twitter"></i> Twitter',
-            url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
-        });
-
-
-
-        // Facebook Pixel Code Don't Delete
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window,
-            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
-
-        try {
-            fbq('init', '111649226022273');
-            fbq('track', "PageView");
-
-        } catch (err) {
-            console.log('Facebook Track Error:', err);
-        }
-
-    });
-</script>
-<script>
-    // Facebook Pixel Code Don't Delete
-    ! function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-            n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window,
-        document, 'script', '//connect.facebook.net/en_US/fbevents.js');
-
-    try {
-        fbq('init', '111649226022273');
-        fbq('track', "PageView");
-
-    } catch (err) {
-        console.log('Facebook Track Error:', err);
-    }
-</script>
-<noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
-</noscript>
-<script>
-    $(document).ready(function() {
-        // Javascript method's body can be found in assets/js/demos.js
-        md.initDashboardPageCharts();
-
-    });
-</script>
+<!-- plugins:js -->
+<script src="{{asset("backend")}}/vendors/js/vendor.bundle.base.js"></script>
+<script src="{{asset("backend")}}/vendors/js/vendor.bundle.addons.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page-->
+<!-- End plugin js for this page-->
+<!-- inject:js -->
+<script src="{{asset("backend")}}/js/off-canvas.js"></script>
+<script src="{{asset("backend")}}/js/hoverable-collapse.js"></script>
+<script src="{{asset("backend")}}/js/misc.js"></script>
+<script src="{{asset("backend")}}/js/settings.js"></script>
+<script src="{{asset("backend")}}/js/todolist.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page-->
+<script src="{{asset("backend")}}/js/dashboard.js"></script>
+<!-- End custom js for this page-->
 </body>
-
 </html>
