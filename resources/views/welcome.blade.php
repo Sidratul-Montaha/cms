@@ -76,51 +76,8 @@
                     </div>
                     <div class="list-wrapper px-3">
                         <ul class="d-flex flex-column-reverse todo-list">
-                            <li>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="checkbox" type="checkbox">
-                                        Team review meeting at 3.00 PM
-                                    </label>
-                                </div>
-                                <i class="remove fa fa-times-circle"></i>
-                            </li>
-                            <li>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="checkbox" type="checkbox">
-                                        Prepare for presentation
-                                    </label>
-                                </div>
-                                <i class="remove fa fa-times-circle"></i>
-                            </li>
-                            <li>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="checkbox" type="checkbox">
-                                        Resolve all the low priority tickets due today
-                                    </label>
-                                </div>
-                                <i class="remove fa fa-times-circle"></i>
-                            </li>
-                            <li class="completed">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="checkbox" type="checkbox" checked>
-                                        Schedule meeting for next week
-                                    </label>
-                                </div>
-                                <i class="remove fa fa-times-circle"></i>
-                            </li>
-                            <li class="completed">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="checkbox" type="checkbox" checked>
-                                        Project review
-                                    </label>
-                                </div>
-                                <i class="remove fa fa-times-circle"></i>
-                            </li>
+
+
                         </ul>
                     </div>
                     <div class="events py-4 border-bottom px-3">
@@ -147,41 +104,8 @@
                         <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
                     </div>
                     <ul class="chat-list">
-                        <li class="list active">
-                            <div class="profile"><img src="image/faces/face1.jpg" alt="image"><span class="online"></span></div>
-                            <div class="info">
-                                <p>Thomas Douglas</p>
-                                <p>Available</p>
-                            </div>
-                            <small class="text-muted my-auto">19 min</small>
-                        </li>
-                        <li class="list">
-                            <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
-                            <div class="info">
-                                <div class="wrapper d-flex">
-                                    <p>Catherine</p>
-                                </div>
-                                <p>Away</p>
-                            </div>
-                            <div class="badge badge-success badge-pill my-auto mx-2">4</div>
-                            <small class="text-muted my-auto">23 min</small>
-                        </li>
-                        <li class="list">
-                            <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
-                            <div class="info">
-                                <p>Daniel Russell</p>
-                                <p>Available</p>
-                            </div>
-                            <small class="text-muted my-auto">14 min</small>
-                        </li>
-                        <li class="list">
-                            <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
-                            <div class="info">
-                                <p>James Richardson</p>
-                                <p>Away</p>
-                            </div>
-                            <small class="text-muted my-auto">2 min</small>
-                        </li>
+
+
                         <li class="list">
                             <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
                             <div class="info">
@@ -222,6 +146,7 @@
 
 
             Sidratul Montaha Kheya
+
 
 
             </div>
