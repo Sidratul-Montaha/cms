@@ -18,6 +18,22 @@
             </div>
         </li>
 
+
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#admin" aria-expanded="false" aria-controls="page-layouts">
+                <i class="fab fa-trello menu-icon"></i>
+                <span class="menu-title">Admin</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="admin">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{route('admin.view')}}">Super Admin</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="pages/layout/rtl-layout.html">Employee</a></li>
+
+                </ul>
+            </div>
+        </li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
                 <i class="fab fa-trello menu-icon"></i>

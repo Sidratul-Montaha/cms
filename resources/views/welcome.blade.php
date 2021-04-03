@@ -145,7 +145,7 @@
             <div class="content-wrapper">
 
 
-            Sidratul Montaha Kheya
+            @yield('operation')
 
 
 
