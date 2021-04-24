@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,4 +25,5 @@ Route::get('/', function () {
 Route::get('/admin',[AdminController::class,'viewadmin'])->name('admin.view');
 Route::get('/admin/list',[AdminController::class,'viewadminlist'])->name('admin.list');
 Route::post('/admin/form',[AdminController::class,'viewadminform'])->name('admin.form');
+
 
